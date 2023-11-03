@@ -1,0 +1,99 @@
+#intro
+{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.mainImg
+{
+    position: absolute;
+    top: -4rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.introContent
+{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+.hello
+{
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName
+{
+    color: rgb(223, 223, 13);
+}
+
+.introPara
+{
+    font-size: medium;
+    font-weight: 50;
+    max-width: 50vw;
+    letter-spacing: 1px;
+}
+
+.btn
+{
+    background: white;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    border-radius: 2rem;
+    margin-top: 4rem;
+    font-size: 1rem;
+    width: 150px;
+    font-weight: bold;
+}
+
+.btn:hover
+{
+    background-color: rgb(223, 223, 13);
+    cursor: pointer;
+}
+
+.img
+{
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    margin: 0.7rem 0.6rem;
+    margin-left: 0;
+}
+
+@media screen and (max-width:840px){
+    .introContent
+    {
+        font-size: 6vw;
+    }
+    .hello{
+        font-size: 4.5vw;
+    }
+}
+@media screen and (max-width:480px){
+    .mainImg{
+        right: -10vw;
+    }
+    .introContent
+    {
+        font-size: 5vw;
+    }
+}
